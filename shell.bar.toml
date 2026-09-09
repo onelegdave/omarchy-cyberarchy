@@ -1,0 +1,13 @@
+# Top bar. A section override replaces the whole [bar] section, so every key
+# from Omarchy's default template is repeated here.
+[bar]
+background       = "#000000"
+background-alpha = 1.0
+# Idle bar icons and text.
+text             = "#6c7fe0"
+# Modules calling attention to themselves: recording, muted mic, DND,
+# pending updates.
+active           = "#E43995"
+scale-with-font  = true
+size-horizontal  = 26
+size-vertical    = 28

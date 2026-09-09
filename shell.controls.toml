@@ -1,0 +1,30 @@
+# Interactive control chrome across every bar panel, dropdown and popup.
+# Mirrors Omarchy's default template; the state colors point at the magenta
+# accent and the alphas are raised so the tint reads on a black background.
+[controls]
+normal-color        = "accent"
+normal-fill-alpha   = 0.04
+normal-border       = "accent"
+normal-border-width = 1
+normal-border-alpha = 0.45
+
+hover-cursor-color        = "accent"
+hover-cursor-fill-alpha   = 0.18
+hover-cursor-border       = "accent"
+hover-cursor-border-width = 1
+hover-cursor-border-alpha = 0.5
+
+focus-color        = "accent"
+focus-fill-alpha   = 0.18
+focus-border       = "accent"
+focus-border-width = 1
+focus-border-alpha = 0.5
+
+selected-color        = "accent"
+selected-fill-alpha   = 0.34
+selected-border       = "accent"
+selected-border-width = 0
+selected-border-alpha = 1.0
+
+pressed-fill-alpha   = 0.42
+selection-fill-alpha = 0.5
