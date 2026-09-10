@@ -3,7 +3,7 @@
 A dark cyberpunk theme for [Omarchy](https://omarchy.org). Black ground,
 magenta accent, periwinkle bar and borders.
 
-![Cyberarchy](backgrounds/cyberarchy-2-4k@.jpg)
+![Cyberarchy](preview.png)
 
 ## Palette
 
