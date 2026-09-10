@@ -1,9 +1,9 @@
-# OLDs Cyber
+# Cyberarchy
 
 A dark cyberpunk theme for [Omarchy](https://omarchy.org). Black ground,
 magenta accent, periwinkle bar and borders.
 
-![OLDs Cyber](backgrounds/olds-cyber-1-4k@.jpg)
+![Cyberarchy](backgrounds/cyberarchy-2-4k@.jpg)
 
 ## Palette
 
@@ -24,13 +24,13 @@ the bar icons and every surface border, so the two never compete.
 ## Install
 
 ```
-omarchy theme install https://github.com/USERNAME/omarchy-olds-cyber
+omarchy theme install https://github.com/onelegdave/omarchy-cyberarchy
 ```
 
-Then pick **OLDs Cyber** from the theme menu, or:
+Then pick **Cyberarchy** from the theme menu, or:
 
 ```
-omarchy theme set "OLDs Cyber"
+omarchy theme set "Cyberarchy"
 ```
 
 ## What it covers
@@ -55,6 +55,16 @@ overrides so it keeps inheriting upstream template improvements:
   surface references.
 - `shell.controls.toml` sets the normal, hover, focus and selected states.
 
+## Wallpapers
+
+Two are included, both generated from the palette above:
+
+- `cyberarchy-1-4k@.jpg` - synthwave sun over a perspective grid.
+- `cyberarchy-2-4k@.jpg` - rain-soaked skyline with neon crowns.
+
+Drop your own into `~/.config/omarchy/backgrounds/cyberarchy/` to override
+them without touching the theme.
+
 ## Optional extras
 
 These are **not** part of the theme. Omarchy themes carry colour files, not
@@ -62,8 +72,6 @@ QML, so the following need edits to cloned plugins. Each survives theme
 switches and needs redoing after a plugin re-clone.
 
 ### Magenta calendar hero
-
-Clone the clock, then edit `Panel.qml`:
 
 ```
 omarchy-plugin-clone omarchy.clock
@@ -99,6 +107,26 @@ map-marker and location lines if you want those too.
 > The map-marker glyph is a Nerd Font private-use character. Edit that colour
 > line in place rather than retyping the glyph line, or the icon is lost.
 
+### Magenta active indicators
+
+`Ui/BarIndicator.qml` sets `useActiveColor: false`, so indicators signal
+active state by opacity alone and never pick up `bar.active`. To colour them:
+
+```
+omarchy-plugin-clone omarchy.indicators
+```
+
+Then add `useActiveColor: true` to each file in
+`~/.config/omarchy/plugins/<user>.indicators/indicators/`.
+
+### If you clone the widget your bar is anchored to
+
+`omarchy-plugin-clone` rewrites the widget's layout entry to the new plugin
+id but leaves `bar.centerAnchor` in `~/.config/omarchy/shell.json` pointing at
+the original. The anchor then matches nothing and the bar falls back to plain
+centring, so the anchored widget drifts instead of holding position. Point
+`centerAnchor` at the cloned id to fix it.
+
 ### A note on cloned plugins
 
 Cloning forks a plugin, so upstream fixes no longer reach it. That matters
@@ -109,7 +137,7 @@ Apply changes with `omarchy-restart-shell`, not `omarchy theme set`.
 
 ## Credits
 
-Wallpaper generated from the theme palette. Everything here is original.
+Wallpapers generated from the theme palette. Everything here is original.
 
 ## License
 
