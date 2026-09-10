@@ -36,8 +36,14 @@ omarchy theme set "Cyberarchy"
 ## What it covers
 
 Hyprland borders and hyprlock, the Omarchy shell (bar, menus, popups,
-notifications, launcher, polkit and lock), btop, GTK 3 and 4, Qt via qt6ct,
-mako, walker, swayosd, superfile, cava, chromium and Zen.
+notifications, launcher, polkit and lock), btop, chromium, Zen, and the
+terminal palette.
+
+`qt6ct.conf`, `mako.ini`, `walker.css`, `swayosd.css`, `superfile.toml` and
+`cava_theme` are included for setups that still run those components. GTK
+apps are not themed per-theme: Omarchy sets `Adwaita-dark` and `prefer-dark`
+globally via gsettings, so GTK follows your light/dark mode rather than this
+palette.
 
 Terminal colours come from `colors.toml`. The `alacritty.toml`,
 `ghostty.conf` and `kitty.conf` files are included for local use but are
