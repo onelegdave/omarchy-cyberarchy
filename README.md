@@ -145,6 +145,10 @@ Apply changes with `omarchy-restart-shell`, not `omarchy theme set`.
 
 Wallpapers generated from the theme palette. Everything here is original.
 
+## AI assistance
+
+AI tools were used to assist work on this project, including development and documentation. AI assistance is acknowledged here; authorship and maintenance remain with the human project contributors.
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
