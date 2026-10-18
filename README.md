@@ -45,10 +45,10 @@ apps are not themed per-theme: Omarchy sets `Adwaita-dark` and `prefer-dark`
 globally via gsettings, so GTK follows your light/dark mode rather than this
 palette.
 
-Terminal colours come from `colors.toml`. The `alacritty.toml`,
-`ghostty.conf` and `kitty.conf` files are included for local use but are
-stripped by Omarchy when a theme is installed from a git repo, which is
-expected and loses nothing.
+Terminal colours come from `colors.toml`. Omarchy generates terminal
+configurations from this palette when the theme is installed. The theme
+does not ship the terminal configuration files that Omarchy excludes from
+repository-installed themes.
 
 ### Shell section overrides
 
@@ -148,6 +148,8 @@ Wallpapers generated from the theme palette. Everything here is original.
 ## AI assistance
 
 AI tools were used to assist work on this project, including development and documentation. AI assistance is acknowledged here; authorship and maintenance remain with the human project contributors.
+
+Codex assisted with pull request review and documentation.
 
 ## License
 
